@@ -6,5 +6,5 @@ import { Component } from "@angular/core";
     styleUrls: ['lower_card_block.component.css']
 })
 export class LowerCardBlockComponent {
-
+    
 }
