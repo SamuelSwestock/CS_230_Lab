@@ -12,6 +12,7 @@ import { GuitarsLayoutComponent } from './body/guitars_layout.component';
 import { StudioandrecordingLayoutComponent } from './body/studioandrecording_layout.component';
 import { DrumsLayoutComponent } from './body/drums_layout.component';
 import { BassLayoutComponent } from './body/bass_layout.component';
+import { SmallBlogTeaser } from './body/small_blog_teaser.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { BassLayoutComponent } from './body/bass_layout.component';
     GuitarsLayoutComponent,
     StudioandrecordingLayoutComponent,
     DrumsLayoutComponent,
-    BassLayoutComponent
+    BassLayoutComponent,
+    SmallBlogTeaser
   ],
   imports: [
     BrowserModule,

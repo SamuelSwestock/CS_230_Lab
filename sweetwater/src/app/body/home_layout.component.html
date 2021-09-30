@@ -4,3 +4,8 @@
 <div>
     <app_lower_card_block></app_lower_card_block>
 </div>
+<div class="d-flex flex-row justify-content-evenly">
+    <div *ngFor="let blog of smallBlogTeaser;">
+        <app_small_blog_teaser class="flex-fill" imagePath={{blog.imagePath}} title={{blog.title}} date={{blog.date}}></app_small_blog_teaser>
+    </div>
+</div>
