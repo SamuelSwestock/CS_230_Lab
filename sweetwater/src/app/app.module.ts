@@ -13,6 +13,8 @@ import { StudioandrecordingLayoutComponent } from './body/studioandrecording_lay
 import { DrumsLayoutComponent } from './body/drums_layout.component';
 import { BassLayoutComponent } from './body/bass_layout.component';
 import { SmallBlogTeaser } from './body/small_blog_teaser.component';
+import { HttpClientModule } from '@angular/common/http';
+import { UserInfoComponent } from './header/user-info.component';
 
 @NgModule({
   declarations: [
@@ -27,11 +29,13 @@ import { SmallBlogTeaser } from './body/small_blog_teaser.component';
     StudioandrecordingLayoutComponent,
     DrumsLayoutComponent,
     BassLayoutComponent,
-    SmallBlogTeaser
+    SmallBlogTeaser,
+    UserInfoComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
