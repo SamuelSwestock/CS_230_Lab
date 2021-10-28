@@ -15,36 +15,32 @@ export class SmallBlogTeaser implements OnInit{
     @Input()
     date!: string;
     
-    blogs: SmallBlogProcedure[] = [];
+    bloglist: SmallBlogProcedure[] = [];
     constructor(private MockBlogService: MockBlogService) {
 
     }
 
     ngOnInit(): void {
         console.log("Sending a get request to the server");
-        this.MockBlogService.getBlog1();
-        this.MockBlogService.getBlog2();
-        this.MockBlogService.getBlog3();
-        this.MockBlogService.getBlog4();
         this.showBlogs();
     }
 
     showBlogs() {
         this.MockBlogService.getBlog1().subscribe((data: SmallBlogProcedure) => {
             console.log(data);
-            this.blogs.push(data);
+            this.bloglist.push(data);
         })
         this.MockBlogService.getBlog2().subscribe((data: SmallBlogProcedure) => {
             console.log(data);
-            this.blogs.push(data);
+            this.bloglist.push(data);
         })
         this.MockBlogService.getBlog3().subscribe((data: SmallBlogProcedure) => {
             console.log(data);
-            this.blogs.push(data);
+            this.bloglist.push(data);
         })
         this.MockBlogService.getBlog4().subscribe((data: SmallBlogProcedure) => {
             console.log(data);
-            this.blogs.push(data);
+            this.bloglist.push(data);
         })
     }
 }

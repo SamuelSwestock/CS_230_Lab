@@ -30,4 +30,19 @@ export class MockBlogService{
         return this.http.get<SmallBlogProcedure>(this.baseURL + this.Endpoint4);
     }
 
+    modifyBlog1(data: SmallBlogProcedure) {
+        return this.http.put(this.baseURL + this.Endpoint1, data);
+    }
+
+    modifyBlog2(data: SmallBlogProcedure) {
+        return this.http.put(this.baseURL + this.Endpoint2, data);
+    }
+
+    modifyBlog3(data: SmallBlogProcedure) {
+        return this.http.put(this.baseURL + this.Endpoint3, data);
+    }
+
+    modifyBlog4(data: SmallBlogProcedure) {
+        return this.http.put(this.baseURL + this.Endpoint4, data);
+    }
 }

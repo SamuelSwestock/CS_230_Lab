@@ -15,6 +15,8 @@ import { BassLayoutComponent } from './body/bass_layout.component';
 import { SmallBlogTeaser } from './body/small_blog_teaser.component';
 import { HttpClientModule } from '@angular/common/http';
 import { UserInfoComponent } from './header/user-info.component';
+import { EditBlogsComponent } from './body/edit_blogs.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -30,12 +32,14 @@ import { UserInfoComponent } from './header/user-info.component';
     DrumsLayoutComponent,
     BassLayoutComponent,
     SmallBlogTeaser,
-    UserInfoComponent
+    UserInfoComponent,
+    EditBlogsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
