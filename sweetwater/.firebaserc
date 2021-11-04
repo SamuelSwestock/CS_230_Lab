@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "sweetwater-app-42701": {
+      "hosting": {
+        "sweetwater": [
+          "sweetwater-app-42701"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "sweetwater-app-42701"
+  }
+}
