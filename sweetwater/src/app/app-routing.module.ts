@@ -13,7 +13,7 @@ const routes: Routes = [
   { path: 'studioandrecording', component: StudioandrecordingLayoutComponent},
   { path: 'drums', component: DrumsLayoutComponent},
   { path: 'bass', component: BassLayoutComponent},
-  { path: 'auth', component: AuthComponent}
+  { path: 'auth', component: AuthComponent},
 ];
 
 
