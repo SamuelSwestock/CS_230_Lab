@@ -6,7 +6,7 @@ import { AuthResponse } from "./authResponse";
 
 @Component({
     selector: "sweetwater-auth",
-    templateUrl: "auth-component.html"
+    templateUrl: "auth.component.html"
 })
 export class AuthComponent {
     public buttonClicked!:string;
