@@ -1,5 +1,6 @@
 import { HttpClient } from "@angular/common/http";
 import { Injectable } from "@angular/core";
+import { DatabaseService } from "./database.service";
 import { SmallBlogProcedure } from "./small_blog_procedure.model";
 
 @Injectable({providedIn: 'root'})
@@ -9,8 +10,8 @@ export class MockBlogService{
     private Endpoint2: string = 'blog2.json';
     private Endpoint3: string = 'blog3.json';
     private Endpoint4: string = 'blog4.json';
-    constructor(private http: HttpClient){
-
+    constructor(private http: HttpClient, private dbService: DatabaseService){
+        dbService.showData();
     }
 
     getBlog1() {
